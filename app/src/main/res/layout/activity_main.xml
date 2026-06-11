@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guia de Lugares Próximos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerSalvos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Lugares Salvos"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capturar minha localização" />
+
+    <TextView
+        android:id="@+id/txtLocalizacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Localização ainda não capturada"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtEndereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço aproximado: -"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBuscarLugares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar lugares próximos"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/txtStatusBusca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nenhuma busca realizada."
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerLugares"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
